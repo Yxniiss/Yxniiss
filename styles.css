@@ -1,4 +1,4 @@
-/* styles.css */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +6,7 @@ body {
     background-color: #fdfdfd;
 }
 
+/* Header */
 header {
     background-color: #ffd700;
     padding: 20px;
@@ -15,25 +16,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     font-size: 2em;
     font-weight: bold;
     color: black;
 }
+
 .logo img {
-    height: 50px; 
+    height: 50px;
     width: auto;
 }
+
 .navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .navbar ul li a {
@@ -42,6 +48,7 @@ header {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     background-image: url('/image/photos/cover.png');
     background-size: cover;
@@ -67,11 +74,8 @@ header {
     position: relative;
     z-index: 2;
 }
-.footer{
-    background-color: #333;
-    color: white;
-}
 
+/* Button Styles */
 .explore-btn {
     padding: 10px 20px;
     background: red;
@@ -79,34 +83,71 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
 }
 
-.collections, .audios, .videos, .artistes, .a-propos, .contact {
+.explore-btn:hover {
+    background: #911616; /* Darker red on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Collections, Audios, Videos, Artistes, and About */
+section {
     padding: 20px;
     text-align: center;
 }
 
+/* Grid Layout */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 
+/* Grille */
+.grid-item {
+    position: relative; /* Important pour positionner le texte */
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* Grid Item Image */
 .grid-item img, .grid-item video {
     width: 100%;
     border-radius: 10px;
 }
 
-.videos .grid-item video {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
+/* Audio Items */
 .audio-item {
-    color: white;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -117,29 +158,31 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.audio-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 .audio-item a {
     color: rgba(255, 255, 255, 0.678);
     text-decoration: none;
 }
 
-.audio-item img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-/* Section Contact */
+/* Contact Section */
 .contact {
-    background-color: #fdfdfd; /* Fond global blanc */
+    background-color: #fdfdfd;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
 }
 
+/* Contact Form */
 .contact-container {
-    background-color: #2E5B83; /* Fond bleu */
+    background-color: #2E5B83;
     color: white;
     padding: 30px;
     width: 90%;
@@ -148,21 +191,11 @@ header {
     text-align: center;
 }
 
-.contact-container h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.contact-container p {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
+    align-items: center;
 }
 
 .contact-form label {
@@ -170,7 +203,7 @@ header {
     font-size: 0.9em;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #dcdcdc; /* Légère variation pour un meilleur contraste */
+    color: #dcdcdc;
 }
 
 .contact-form input,
@@ -184,35 +217,126 @@ header {
     color: #333;
 }
 
-.contact-form textarea {
-    height: 120px;
-    resize: none;
-}
-
 .contact-form input[type="file"] {
     background-color: #fff;
     padding: 5px;
 }
 
-.submit-btn {
-    background-color: #B81D1D; /* Rouge pour le bouton */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .explore-btn {
+        width: 100%;
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .audio-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .audio-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 30px 10px;
+    }
 }
 
-.submit-btn:hover {
-    background-color: #911616; /* Rouge plus foncé au survol */
-}
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5em;
+    }
 
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+
+    .audio-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .audio-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .explore-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+    }
+}
 
 footer {
     background: #ffd700;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audio-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .explore-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+        padding: 8px;
+    }
 }
