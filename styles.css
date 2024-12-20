@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +5,6 @@ body {
     background-color: #fdfdfd;
 }
 
-/* Header */
 header {
     background-color: #ffd700;
     padding: 20px;
@@ -48,7 +46,6 @@ header {
     font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
     background-image: url('/image/photos/cover.png');
     background-size: cover;
@@ -75,7 +72,6 @@ header {
     z-index: 2;
 }
 
-/* Button Styles */
 .explore-btn {
     padding: 10px 20px;
     background: red;
@@ -87,10 +83,9 @@ header {
 }
 
 .explore-btn:hover {
-    background: #911616; /* Darker red on hover */
+    background: #911616; 
 }
 
-/* Footer */
 .footer {
     background-color: #333;
     color: white;
@@ -98,13 +93,11 @@ header {
     padding: 10px;
 }
 
-/* Collections, Audios, Videos, Artistes, and About */
 section {
     padding: 20px;
     text-align: center;
 }
 
-/* Grid Layout */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -112,9 +105,8 @@ section {
     padding: 20px;
 }
 
-/* Grille */
 .grid-item {
-    position: relative; /* Important pour positionner le texte */
+    position: relative; 
 }
 
 .image-overlay {
@@ -140,13 +132,11 @@ section {
 }
 
 
-/* Grid Item Image */
 .grid-item img, .grid-item video {
     width: 100%;
     border-radius: 10px;
 }
 
-/* Audio Items */
 .audio-item {
     display: flex;
     align-items: center;
@@ -171,7 +161,6 @@ section {
     text-decoration: none;
 }
 
-/* Contact Section */
 .contact {
     background-color: #fdfdfd;
     display: flex;
@@ -180,7 +169,6 @@ section {
     padding: 50px 0;
 }
 
-/* Contact Form */
 .contact-container {
     background-color: #2E5B83;
     color: white;
@@ -222,7 +210,6 @@ section {
     padding: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
         padding: 80px 20px;
