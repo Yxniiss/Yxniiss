@@ -1,16 +1,22 @@
-## Hi there 👋
+# Hi, I'm Yanis 👋
 
-<!--
-**Yxniiss/Yxniiss** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Web development student at EFREI
 
-Here are some ideas to get you started:
+💻 Technologies
+JavaScript • HTML • CSS • Vue.js • PHP • Node.js • SQL
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🚀 Currently looking for a web development apprenticeship.
+
+## Projects
+
+🔹 MC Permis website  
+https://mcpermis.netlify.app
+
+🔹 E-commerce website
+
+🔹 Symfony web application
+
+## Contact
+
+LinkedIn  
+https://linkedin.com/in/yanis-drif
