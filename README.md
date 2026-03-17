@@ -9,11 +9,9 @@ JavaScript • HTML • CSS • Vue.js • PHP • Node.js • SQL
 
 ## Projects
 
-🔹 MC Permis website  
-https://mcpermis.netlify.app
+🔹 MC Permis website https://mcpermis.netlify.app
 
-🔹 E-commerce website 
-https://yanis94.42web.io
+🔹 E-commerce website https://yanis94.42web.io
 
 🔹 Symfony web application
 
