@@ -12,7 +12,7 @@ JavaScript • HTML • CSS • Vue.js • PHP • Node.js • SQL
 🔹 MC Permis website  
 https://mcpermis.netlify.app
 
-🔹 E-commerce website
+🔹 E-commerce website 
 https://yanis94.42web.io/liste
 
 🔹 Symfony web application
