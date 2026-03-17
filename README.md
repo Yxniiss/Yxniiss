@@ -13,7 +13,7 @@ JavaScript • HTML • CSS • Vue.js • PHP • Node.js • SQL
 
 🔹 E-commerce website https://yanis94.42web.io
 
-🔹 Symfony web application
+🔹 Memory web application https://memoryvuejs.netlify.app/
 
 ## Contact
 
